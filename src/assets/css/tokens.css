@@ -1,0 +1,63 @@
+/* Design Tokens */
+:root {
+  /* Colors — Light */
+  --fp-bg: #f5f5f0;
+  --fp-bg-surface: #ffffff;
+  --fp-text: #1a1a1a;
+  --fp-text-muted: #555555;
+  --fp-accent: #557;
+  --fp-border: #e0e0e0;
+
+  /* Spacing */
+  --fp-space-xs: 0.5rem;
+  --fp-space-sm: 1rem;
+  --fp-space-md: 2rem;
+  --fp-space-lg: 4rem;
+  --fp-space-xl: 6rem;
+  --fp-space-2xl: 8rem;
+
+  /* Typography scale (fluid) */
+  --fp-text-sm: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+  --fp-text-base: clamp(1rem, 0.9rem + 0.3vw, 1.25rem);
+  --fp-text-lg: clamp(1.25rem, 1rem + 0.5vw, 1.5rem);
+  --fp-text-xl: clamp(1.5rem, 1.2rem + 0.8vw, 2rem);
+  --fp-text-2xl: clamp(2rem, 1.5rem + 1.5vw, 3rem);
+  --fp-text-3xl: clamp(2.5rem, 1.8rem + 2vw, 4rem);
+  --fp-text-hero: clamp(3rem, 2rem + 3vw, 5.5rem);
+
+  /* Layout */
+  --fp-content-width: 720px;
+  --fp-wide-width: 1100px;
+
+  /* Transitions */
+  --fp-transition: 0.3s ease;
+
+  /* Border radius */
+  --fp-radius: 8px;
+
+  /* Variable font axes */
+  --fp-wght-body: 450;
+  --fp-wdth-body: 100;
+  --fp-text-GRAD: 88;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --fp-bg: #0a0a0a;
+  --fp-bg-surface: #1a1a1a;
+  --fp-text: #e5e5e5;
+  --fp-text-muted: #999999;
+  --fp-accent: #8899bb;
+  --fp-border: #2a2a2a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fp-bg: #0a0a0a;
+    --fp-bg-surface: #1a1a1a;
+    --fp-text: #e5e5e5;
+    --fp-text-muted: #999999;
+    --fp-accent: #8899bb;
+    --fp-border: #2a2a2a;
+  }
+}

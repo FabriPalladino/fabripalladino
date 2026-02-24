@@ -1,0 +1,30 @@
+---
+layout: layouts/page.njk
+title: "Blog"
+description: "Thoughts on front-end development, accessibility, design systems, and the web."
+---
+<section class="hero">
+  <h1 data-reveal>Blog</h1>
+  <p class="hero__subtitle" data-reveal data-reveal-delay="1">
+    Thoughts on front-end development, accessibility, and the craft of building for the web.
+  </p>
+</section>
+
+<section class="section section--border">
+  {% set posts = collections.blog | reverse %}
+  {% if posts.length > 0 %}
+    {% for post in posts %}
+      <div class="post-list__item" data-reveal>
+        <a href="{{ post.url }}" class="post-list__link">
+          <h2 class="post-list__title">{{ post.data.title }}</h2>
+          <p class="post-list__meta">{{ post.date | readableDate }}</p>
+          {% if post.data.description %}
+            <p class="post-list__description">{{ post.data.description }}</p>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p data-reveal>Blog posts coming soon.</p>
+  {% endif %}
+</section>

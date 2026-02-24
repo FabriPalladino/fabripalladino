@@ -1,0 +1,221 @@
+/* Typography — Variable font system */
+
+/* Base body text */
+body,
+p,
+th,
+td,
+ul,
+li,
+blockquote {
+  font-family: "xanti-typewriter-variable", sans-serif;
+  font-variation-settings: "wght" var(--fp-wght-body), "wdth" var(--fp-wdth-body);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: var(--fp-text-base);
+  color: var(--fp-text);
+  line-height: 1.6;
+}
+
+/* Paragraph */
+p {
+  max-width: 38em;
+  hyphens: auto;
+  letter-spacing: -0.02em;
+  font-size: var(--fp-text-base);
+  font-variation-settings:
+    "wght" var(--fp-wght-body),
+    "wdth" calc(var(--fp-wdth-body) * 0.85),
+    "opsz" 16,
+    "GRAD" var(--fp-text-GRAD);
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 600px) {
+  p {
+    font-variation-settings:
+      "wght" var(--fp-wght-body),
+      "wdth" calc(var(--fp-wdth-body) * 0.9),
+      "opsz" 18,
+      "GRAD" var(--fp-text-GRAD);
+  }
+}
+
+@media (min-width: 900px) {
+  p {
+    font-variation-settings:
+      "wght" var(--fp-wght-body),
+      "wdth" var(--fp-wdth-body),
+      "opsz" 20,
+      "GRAD" var(--fp-text-GRAD);
+  }
+}
+
+/* Headings — mokoko-variable */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "mokoko-variable", Georgia, "Times New Roman", serif;
+  font-variation-settings:
+    "wght" 800,
+    "wdth" 100,
+    "opsz" 24,
+    "GRAD" var(--fp-text-GRAD);
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: var(--fp-text-hero);
+  font-variation-settings:
+    "wght" 900,
+    "wdth" 80,
+    "YTLC" 500,
+    "YTAS" 680,
+    "YTDE" 190,
+    "YTUC" 720,
+    "opsz" 48,
+    "GRAD" var(--fp-text-GRAD);
+  line-height: 1.0;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-variation-settings:
+      "wght" 950,
+      "wdth" 85,
+      "YTLC" 500,
+      "YTAS" 715,
+      "YTDE" 190,
+      "YTUC" 735,
+      "opsz" 64,
+      "GRAD" var(--fp-text-GRAD);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-variation-settings:
+      "wght" 1000,
+      "wdth" 94,
+      "YTLC" 500,
+      "YTAS" 730,
+      "YTDE" 220,
+      "YTUC" 750,
+      "opsz" 80,
+      "GRAD" var(--fp-text-GRAD);
+  }
+}
+
+/* h2 — Amstelvar */
+h2 {
+  font-family: "Amstelvar 1.1 VF", Georgia, "Times New Roman", serif;
+  font-size: var(--fp-text-3xl);
+  font-variation-settings:
+    "wght" 600,
+    "wdth" 80,
+    "opsz" 24,
+    "GRAD" var(--fp-text-GRAD);
+  line-height: 1.15;
+}
+
+@media screen and (min-width: 600px) {
+  h2 {
+    font-variation-settings:
+      "wght" 650,
+      "wdth" 90,
+      "opsz" 36,
+      "GRAD" var(--fp-text-GRAD);
+  }
+}
+
+@media (min-width: 900px) {
+  h2 {
+    font-variation-settings:
+      "wght" 700,
+      "wdth" 100,
+      "opsz" 48,
+      "GRAD" var(--fp-text-GRAD);
+  }
+}
+
+h3 {
+  font-size: var(--fp-text-2xl);
+}
+
+h4 {
+  font-size: var(--fp-text-xl);
+}
+
+h5 {
+  font-size: var(--fp-text-lg);
+}
+
+h6 {
+  font-size: var(--fp-text-base);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Blockquote */
+blockquote {
+  font-family: "mokoko-variable", Georgia, "Times New Roman", serif;
+  font-size: var(--fp-text-2xl);
+  font-variation-settings:
+    "wght" 400,
+    "wdth" 80,
+    "YTDE" 190,
+    "opsz" 40,
+    "GRAD" var(--fp-text-GRAD);
+  line-height: 1.2;
+  border-left: 3px solid var(--fp-accent);
+  padding-left: var(--fp-space-md);
+  color: var(--fp-text-muted);
+}
+
+/* Links */
+a {
+  color: var(--fp-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  transition: color var(--fp-transition);
+}
+
+a:hover {
+  color: var(--fp-text);
+}
+
+/* Strong */
+strong {
+  font-variation-settings: "wght" 700;
+}
+
+/* Small */
+small {
+  font-size: var(--fp-text-sm);
+  color: var(--fp-text-muted);
+}
+
+/* Mark */
+mark {
+  background: transparent;
+  color: var(--fp-accent);
+  font-weight: normal;
+}
+
+/* Font loading states */
+.wf-inactive body {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0;
+}
+
+.wf-active body {
+  font-family: "xanti-typewriter-variable", sans-serif;
+}

@@ -1,0 +1,45 @@
+<title>{% if title %}{{ title }} — {{ meta.title }}{% else %}{{ meta.title }} — {{ meta.description }}{% endif %}</title>
+<meta name="description" content="{% if description %}{{ description }}{% else %}{{ meta.description }}{% endif %}">
+<link rel="canonical" href="{{ meta.url }}{{ page.url }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ meta.title }}{% endif %}">
+<meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ meta.description }}{% endif %}">
+<meta property="og:url" content="{{ meta.url }}{{ page.url }}">
+<meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ meta.title }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ meta.title }}{% endif %}">
+<meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ meta.description }}{% endif %}">
+
+<!-- JSON-LD -->
+{% if layout == "layouts/post.njk" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title }}",
+  "datePublished": "{{ date }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ meta.author }}"
+  }
+}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ meta.author }}",
+  "url": "{{ meta.url }}",
+  "jobTitle": "Senior Frontend Developer",
+  "sameAs": [
+    "https://www.linkedin.com/in/fabripalladino/",
+    "https://github.com/fabripalladino"
+  ]
+}
+</script>
+{% endif %}
