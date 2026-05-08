@@ -1,0 +1,81 @@
+---
+layout: layouts/base.njk
+title: ""
+description: "Senior Frontend Developer specializing in accessible interfaces, design systems, and front-end architecture."
+---
+<section class="hero">
+  <div class="container container--wide">
+    <h1 class="hero__title" data-reveal>Fabrizio Palladino</h1>
+    <p class="hero__subtitle" data-reveal data-reveal-delay="1">Senior Frontend Developer — HTML, CSS, JS/TS, Accessibility</p>
+    <p class="hero__intro" data-reveal data-reveal-delay="2">
+      I build accessible, performant interfaces that put people first.
+      With over a decade of experience, I focus on design systems, front-end architecture, and making the web work for everyone.
+    </p>
+  </div>
+</section>
+
+<section class="section section--border">
+  <div class="container container--wide">
+    <h2 data-reveal>What I Do</h2>
+    <div class="grid" style="margin-top: var(--fp-space-md);">
+      <div class="card" data-reveal data-reveal-delay="1">
+        <h3 class="card__title">Accessible Interfaces</h3>
+        <p class="card__text">Hand-coded HTML and CSS to W3C standards with a strong understanding of WCAG. Ensuring the web is usable by everyone.</p>
+      </div>
+      <div class="card" data-reveal data-reveal-delay="2">
+        <h3 class="card__title">Design Systems</h3>
+        <p class="card__text">Structured, scalable component libraries and style guides that keep teams aligned and code consistent.</p>
+      </div>
+      <div class="card" data-reveal data-reveal-delay="3">
+        <h3 class="card__title">Front-end Architecture</h3>
+        <p class="card__text">Clean, maintainable codebases built with modern HTML, CSS, JavaScript and TypeScript. Performance matters.</p>
+      </div>
+      <div class="card" data-reveal data-reveal-delay="4">
+        <h3 class="card__title">Wireframes &amp; Prototypes</h3>
+        <p class="card__text">Translating ideas into interactive prototypes. Bridging the gap between design and development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--border">
+  <div class="container container--wide">
+    <div data-reveal>
+      <h2>About Me</h2>
+      <p style="margin-top: var(--fp-space-sm);">
+        After studying Management of Publishing Enterprises, I fell in love with HTML, CSS, and their potential.
+        That passion broadened to include everything that makes the web usable, accessible, and reliable.
+        I now build interfaces for institutions like the Council of the European Union, always focusing on the user first.
+      </p>
+      <p style="margin-top: var(--fp-space-sm);">
+        <a href="/about/" class="cta-link">Learn more about me</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--border">
+  <div class="container container--wide">
+    <h2 data-reveal>Latest Posts</h2>
+    <div style="margin-top: var(--fp-space-md);">
+      {% set posts = collections.blog | reverse %}
+      {% if posts.length > 0 %}
+        {% for post in posts %}
+          {% if loop.index <= 3 %}
+            <div class="post-list__item" data-reveal>
+              <a href="{{ post.url }}" class="post-list__link">
+                <h3 class="post-list__title">{{ post.data.title }}</h3>
+                <p class="post-list__meta">{{ post.date | readableDate }}</p>
+                {% if post.data.description %}
+                  <p class="post-list__description">{{ post.data.description }}</p>
+                {% endif %}
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p data-reveal>Blog posts coming soon.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>

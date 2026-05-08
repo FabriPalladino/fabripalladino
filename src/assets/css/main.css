@@ -1,0 +1,7 @@
+/* Main entry point — imports all stylesheets */
+@import "./reset.css";
+@import "./tokens.css";
+@import "./typography.css";
+@import "./layout.css";
+@import "./components.css";
+@import "./animations.css";
