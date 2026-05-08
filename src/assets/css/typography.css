@@ -8,9 +8,9 @@ td,
 ul,
 li,
 blockquote {
-  font-family: "xanti-typewriter-variable", sans-serif;
-  font-variation-settings: "wght" var(--fp-wght-body), "wdth" var(--fp-wdth-body);
-  font-weight: normal;
+  font-family: "Cabinet Grotesk", "xanti-typewriter-variable", sans-serif;
+  font-variation-settings: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -24,56 +24,29 @@ body {
 p {
   max-width: 38em;
   hyphens: auto;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-size: var(--fp-text-base);
-  font-variation-settings:
-    "wght" var(--fp-wght-body),
-    "wdth" calc(var(--fp-wdth-body) * 0.85),
-    "opsz" 16,
-    "GRAD" var(--fp-text-GRAD);
   line-height: 1.6;
 }
 
-@media screen and (min-width: 600px) {
-  p {
-    font-variation-settings:
-      "wght" var(--fp-wght-body),
-      "wdth" calc(var(--fp-wdth-body) * 0.9),
-      "opsz" 18,
-      "GRAD" var(--fp-text-GRAD);
-  }
-}
-
-@media (min-width: 900px) {
-  p {
-    font-variation-settings:
-      "wght" var(--fp-wght-body),
-      "wdth" var(--fp-wdth-body),
-      "opsz" 20,
-      "GRAD" var(--fp-text-GRAD);
-  }
-}
-
-/* Headings — mokoko-variable */
+/* Headings — Cabinet Grotesk */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "mokoko-variable", Georgia, "Times New Roman", serif;
-  font-variation-settings:
-    "wght" 800,
-    "wdth" 100,
-    "opsz" 24,
-    "GRAD" var(--fp-text-GRAD);
-  font-weight: normal;
+  font-family: "Cabinet Grotesk", "mokoko-variable", Georgia, "Times New Roman", serif;
+  font-variation-settings: normal;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 h1 {
+  font-family: "mokoko-variable", Georgia, "Times New Roman", serif;
   font-size: var(--fp-text-hero);
+  font-weight: normal;
   font-variation-settings:
     "wght" 900,
     "wdth" 80,
@@ -114,36 +87,10 @@ h1 {
   }
 }
 
-/* h2 — Amstelvar */
 h2 {
-  font-family: "Amstelvar 1.1 VF", Georgia, "Times New Roman", serif;
   font-size: var(--fp-text-3xl);
-  font-variation-settings:
-    "wght" 600,
-    "wdth" 80,
-    "opsz" 24,
-    "GRAD" var(--fp-text-GRAD);
+  font-weight: 800;
   line-height: 1.15;
-}
-
-@media screen and (min-width: 600px) {
-  h2 {
-    font-variation-settings:
-      "wght" 650,
-      "wdth" 90,
-      "opsz" 36,
-      "GRAD" var(--fp-text-GRAD);
-  }
-}
-
-@media (min-width: 900px) {
-  h2 {
-    font-variation-settings:
-      "wght" 700,
-      "wdth" 100,
-      "opsz" 48,
-      "GRAD" var(--fp-text-GRAD);
-  }
 }
 
 h3 {
@@ -182,6 +129,7 @@ blockquote {
 
 /* Links */
 a {
+  font-family: "xanti-typewriter-variable", monospace;
   color: var(--fp-accent);
   text-decoration: underline;
   text-underline-offset: 0.15em;
@@ -217,5 +165,5 @@ mark {
 }
 
 .wf-active body {
-  font-family: "xanti-typewriter-variable", sans-serif;
+  font-family: "Cabinet Grotesk", "xanti-typewriter-variable", sans-serif;
 }

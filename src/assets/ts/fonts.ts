@@ -11,7 +11,7 @@ export function initFonts(): void {
     return;
   }
 
-  const bodyFont = new FontFaceObserver("xanti-typewriter-variable", {
+  const bodyFont = new FontFaceObserver("Cabinet Grotesk", {
     weight: 400,
   });
 
