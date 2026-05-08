@@ -6,7 +6,8 @@
   "description": "Fabrizio Palladino — Senior Frontend Developer",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "typecheck": "tsc"
   },
   "author": "Fabrizio Palladino",
   "license": "ISC",
