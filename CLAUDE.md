@@ -2,6 +2,15 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Satellite Project Reference
+
+This repo is a satellite of digital-brain. Cross-session project state lives there, not here.
+
+- **Canonical project file**: `~/www/digital-brain/projects/active/2026-02-15-redesign-personal-website.md`
+- **Cross-repo conventions**: `~/www/digital-brain/SATELLITE-SPEC.md`
+
+When capturing decisions, plans, or TODOs that span sessions, append to the canonical project file's Log. Code-local notes (commit messages, code comments, in-repo design docs) stay here.
+
 ## Build & Development Commands
 
 - `yarn dev` — Start 11ty + Vite dev server with hot reload
