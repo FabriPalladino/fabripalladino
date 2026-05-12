@@ -24,11 +24,7 @@ It's not a tragedy. But it is a small failure of care. The work could have been 
 
 Once you have the frame, you start seeing it everywhere.
 
-The shrink-wrapped product that needs scissors to open: the manufacturer's job, pushed forward to the moment you want to use it.
-
 The form that doesn't validate as you type — submit, error, fix, submit, error, fix. The work of catching mistakes early was someone's to do, once. Now it's yours, every time, on every form.
-
-The pull request with no description; the reviewer reads the diff line by line to reconstruct what changed and why. Five minutes of writing upstream becomes thirty minutes of guessing downstream — multiplied by every reviewer who shows up.
 
 The "Re: Re: Fwd: Re:" email chain in your inbox. Two minutes of someone editing the subject line at the right moment would have saved an hour of searching across forty messages, for everyone copied.
 
@@ -36,6 +32,8 @@ The software update prompt that interrupts your work at 10am because nobody aske
 
 The IKEA instructions that quietly assume you've already done step three.
 
-In each case, someone arrived at the point where one more small piece of work — a piece of string, ten more seconds of thought, one paragraph of description — would have absorbed the cost upstream. They didn't take it. The work didn't disappear; it just moved. Now it's spread out across everyone downstream, in small inconvenient pieces, all the time.
+In each case, someone arrived at the point where one more small piece of work — a piece of string, ten more seconds of thought, one clearer decision — would have absorbed the cost upstream. They didn't take it. The work didn't disappear; it just moved. Now it's spread out across everyone downstream, in small inconvenient pieces, all the time.
 
 The bouquet garni doesn't ask the eater to think about herbs. That's the whole point.
+
+To me, that's the ethic: do the small, unglamorous work close to the source, where it is cheapest and clearest, so the person at the end can simply get on with what they came to do. Good design often feels like nothing happened. Someone tied the string before the bowl reached the table.
