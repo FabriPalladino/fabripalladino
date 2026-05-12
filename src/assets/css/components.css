@@ -337,6 +337,31 @@
 }
 
 /* ————————————————————————————————
+   Stream list
+   ———————————————————————————————— */
+.stream-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--fp-space-md);
+  margin: 0;
+}
+
+.stream-list__item {
+  margin: 0;
+}
+
+.stream-list__name {
+  font-size: var(--fp-text-lg);
+  margin: 0 0 var(--fp-space-xs) 0;
+}
+
+.stream-list__desc {
+  margin: 0;
+  color: var(--fp-text-muted);
+  font-size: var(--fp-text-sm);
+}
+
+/* ————————————————————————————————
    Blog post list
    ———————————————————————————————— */
 .post-list__item {
