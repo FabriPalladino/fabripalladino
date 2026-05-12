@@ -114,7 +114,7 @@ h6 {
 /* Blockquote */
 blockquote {
   font-family: "mokoko-variable", Georgia, "Times New Roman", serif;
-  font-size: var(--fp-text-2xl);
+  font-size: var(--fp-text-xl);
   font-variation-settings:
     "wght" 400,
     "wdth" 80,
@@ -122,7 +122,8 @@ blockquote {
     "opsz" 40,
     "GRAD" var(--fp-text-GRAD);
   line-height: 1.2;
-  border-left: 3px solid var(--fp-accent);
+  border-left: 4px solid var(--fp-accent);
+  padding-block: var(--fp-space-sm);
   padding-left: var(--fp-space-md);
   color: var(--fp-text-muted);
 }
