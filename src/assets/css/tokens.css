@@ -18,7 +18,7 @@
 
   /* Typography scale (fluid) */
   --fp-text-sm: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
-  --fp-text-base: clamp(1rem, 0.9rem + 0.3vw, 1.25rem);
+  --fp-text-base: clamp(1.125rem, 0.9rem + 0.3vw, 1.25rem);
   --fp-text-lg: clamp(1.25rem, 1rem + 0.5vw, 1.5rem);
   --fp-text-xl: clamp(1.5rem, 1.2rem + 0.8vw, 2rem);
   --fp-text-2xl: clamp(2rem, 1.5rem + 1.5vw, 3rem);
