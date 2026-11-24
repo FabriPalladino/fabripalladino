@@ -362,6 +362,26 @@
 }
 
 /* ————————————————————————————————
+   About page portrait
+   ———————————————————————————————— */
+.about__portrait {
+  float: right;
+  width: 160px;
+  height: auto;
+  margin: 0 0 var(--fp-space-md) var(--fp-space-md);
+  border-radius: var(--fp-radius);
+}
+
+@media (max-width: 600px) {
+  .about__portrait {
+    float: none;
+    display: block;
+    margin: 0 auto var(--fp-space-md);
+    max-width: 200px;
+  }
+}
+
+/* ————————————————————————————————
    Blog post list
    ———————————————————————————————— */
 .post-list__item {
