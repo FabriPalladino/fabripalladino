@@ -1,5 +1,5 @@
 ---
-title: "The Edge I'm Honing"
+title: "The Edge"
 date: 2026-11-24
 description: "Two bets for a freelancer: upstream into UX and UI, and under the hood into front-end fundamentals, connected by technical communication."
 tags: ["freelancing"]
