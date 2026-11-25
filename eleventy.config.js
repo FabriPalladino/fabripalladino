@@ -21,6 +21,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
+  // Drafts: posts with `draft: true` render in `yarn dev` but are left out of
+  // production builds (pages and collections alike).
+  eleventyConfig.addPreprocessor("drafts", "*", (data) => {
+    if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+      return false;
+    }
+  });
+
   // Blog collection
   eleventyConfig.addCollection("blog", function (collectionApi) {
     return collectionApi
